@@ -279,16 +279,17 @@
                             </div>
                             <!-- Dropdown pilih warna -->
                             <div class="form-floating mb-3">
-                                <select class="form-select" id="warna" required>
-                                <option value="" disabled selected>select color</option>
-                                <option value="hitam">Hitam</option>
-                                <option value="putih">Putih</option>
-                                <option value="biru">Biru</option>
-                                <option value="merah">Merah</option>
-                                <option value="hijau">Hijau</option>
+                                <select class="form-select" id="warna" data-sb-validations="required" required>
+                                    <option value="" disabled selected>select color</option>
+                                    <option value="hitam">Hitam</option>
+                                    <option value="putih">Putih</option>
+                                    <option value="biru">Biru</option>
+                                    <option value="merah">Merah</option>
+                                    <option value="hijau">Hijau</option>
                                 </select>
-                                <div class="invalid-feedback">
-                                    A color is required
+                                <label for="warna">Warna</label>
+                                <div class="invalid-feedback" data-sb-feedback="warna:required">
+                                    A color is required.
                                 </div>
                             </div>
   
